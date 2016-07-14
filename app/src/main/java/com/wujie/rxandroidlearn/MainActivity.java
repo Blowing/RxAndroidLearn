@@ -116,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
                 subscriber.onNext("Aloha");
             }
         });
+
+
         String [] s = {"Heo", "Hiaaa", "dddd"};
         Observable observable2 = Observable.from(s);
         observable2.subscribe(subscriber);
