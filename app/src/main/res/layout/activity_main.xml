@@ -10,6 +10,12 @@
     android:orientation="vertical"
     tools:context="com.wujie.rxandroidlearn.MainActivity">
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,22 +26,29 @@
         android:text="haha"/>
 
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:digits=".0123456789"
+        />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|number"
+        android:digits=".0123456789"/>
+
+
+    <EditText
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number|numberDecimal"
-        android:digits=".123456789"/>
+        android:digits=".0123456789"/>
 
-    <EditText
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"/>
-
-
-    <EditText
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="time"/>
+    <ImageView
+        android:id="@+id/image_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
